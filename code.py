@@ -115,7 +115,7 @@ for j in range(len(data)):
     df5 = ''.join(html.xpath('//dl[@class="dataItem03"]/dd[2]/span[2]/text()'))
     df6 = ''.join(html.xpath('//dl[@class="dataItem01"]/dd[3]/span[2]/text()'))
     df7 = ''.join(html.xpath('//dl[@class="dataItem03"]/dd[3]/span[2]/text()'))
-    df2 = ''.join(html.xpath('//dl[@class="dataItem02"]/dd[@class="dataNums"]/span[2]/text()'))
+    df8 = ''.join(html.xpath('//dl[@class="dataItem02"]/dd[@class="dataNums"]/span[2]/text()'))
     
     ls1.append(df1)
     ls2.append(df2)
