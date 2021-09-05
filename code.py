@@ -78,7 +78,7 @@ def get_data(url):
 #获取当前时间
 date = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()).split(' ')[0]
 #读取基金代码
-data = pd.read_excel('D:/fund/code.xlsx')
+data = pd.read_excel('/root/w/fund/code.xlsx')
 
 ids = []
 for i in range(len(data)):
@@ -136,4 +136,4 @@ data['近半年涨幅'] = ls5
 data['近一年涨幅'] = ls6
 data['成立以来涨幅'] = ls7
 data['更新时间'] = date
-data.to_excel('D:/fund/data/'+str(date)+'.xlsx',index = None)
+data.to_excel('/root/w/fund/data/'+str(date)+'.xlsx',index = None)
